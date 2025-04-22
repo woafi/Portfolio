@@ -8,14 +8,14 @@ const services = [
   {
     num: "01",
     title: "Web Development",
-    desc: "Creating responsive and user-friendly websites.",
-    href: "",
+    desc: "Designing and developing clean, efficient websites that work on all devices",
+    href: "/contact",
   },
   {
     num: "02",
     title: "UI/UX Design",
     desc: "Designing intuitive and engaging user interfaces.",
-    href: "",
+    href: "/contact",
   },
 ]
 

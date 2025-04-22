@@ -1,36 +1,130 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Personal Portfolio Website
 
-## Getting Started
+## Overview
+This is a modern, responsive portfolio website built with Next.js, React, Tailwind CSS, and Framer Motion. The portfolio showcases my professional skills, projects, education, services, and experience, with a contact form integrated through EmailJS for direct communication.
 
-First, run the development server:
+## Live Demo
+[View Live Portfolio](https://portfolio-ten-lime-87.vercel.app/)
 
+## Features
+- **Responsive Design**: Fully responsive layout that works on all device sizes
+- **Modern UI/UX**: Clean, professional design with smooth animations using Framer Motion
+- **Dynamic Content**: Showcases projects, skills, education, and professional experience
+- **Contact Form**: Integrated EmailJS for direct communication without a backend
+- **Performance Optimized**: Built with Next.js for optimal loading
+- **Folder-based Routing**: Organized structure using Next.js file-system based routing
+
+## Tech Stack
+- **Frontend Framework**: [Next.js](https://nextjs.org/)
+- **UI Library**: [React](https://reactjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Email Service**: [EmailJS](https://www.emailjs.com/)
+- **Deployment**: [Vercel](https://vercel.com/)
+
+## Installation
+
+### Prerequisites
+- Node.js (v14.0.0 or later)
+- npm or yarn
+
+### Setup Instructions
+1. Clone the repository
+```bash
+git clone https://github.com/woafi/portfolio-website.git
+cd portfolio
+```
+
+2. Install dependencies
+```bash
+npm install framer-motion swiper npx shadcn@latest add input button scroll-area  sheet select tabs textarea tooltip
+# or
+yarn install framer-motion swiper npx shadcn@latest add input button scroll-area  sheet select tabs textarea tooltip
+```
+
+3. Set up environment variables
+Create a `.env.local` file in the root directory with the following variables for EmailJS:
+```
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
+NEXT_PUBLIC_EMAILJS_USER_ID=your_user_id
+```
+
+4. Run the development server
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Project Structure
+```
+portfolio-website/
+├── components/         # React components
+│   ├── layout/         # Layout components
+│   ├── sections/       # Page sections
+│   └── ui/             # Reusable UI components
+├── pages/              # Next.js pages
+│   ├── api/            # API routes
+│   ├── projects/       # Project details pages
+│   └── ...
+├── public/             # Static assets
+│   ├── images/         # Image files
+│   └── resume/         # Resume files
+├── styles/             # Global styles
+├── utils/              # Utility functions
+├── .env.local          # Environment variables
+└── next.config.js      # Next.js configuration
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Key Features Explained
 
-## Learn More
+### Home Page
+The landing page introduces the portfolio owner with an animated hero section, featuring a brief introduction and call-to-action buttons.
 
-To learn more about Next.js, take a look at the following resources:
+### Projects Section
+Showcases completed projects with:
+- Project thumbnails
+- Brief descriptions
+- Technologies used
+- Links to live demos and GitHub repositories
+- Detailed individual project pages
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Skills Section
+Visual representation of technical skills and proficiency levels, categorized by:
+- Programming languages
+- Frameworks & libraries
+- Tools & platforms
+- Soft skills
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Education & Experience
+Timeline-based sections displaying:
+- Educational background with institutions and qualifications
+- Work experience with roles and responsibilities
+- Notable achievements
 
-## Deploy on Vercel
+### Services
+Overview of professional services offered, including:
+- Web development
+- UI/UX design
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Contact Form
+EmailJS-powered contact form allowing visitors to:
+- Send messages directly from the website
+- Receive confirmation emails
+- Submit without page reloads using async handling
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deployment
+The site is deployed on Vercel, which offers:
+- Continuous deployment from GitHub
+- Preview deployments for pull requests
+- Analytics and performance monitoring
+
+
+## Contact
+For any inquiries, please reach out through:
+- Email: your.email@example.com
+- LinkedIn: [Your Name](https://linkedin.com/in/yourprofile)
+- Portfolio: [your-portfolio-url.vercel.app](https://your-portfolio-url.vercel.app)

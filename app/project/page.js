@@ -20,34 +20,120 @@ const projects = [
         name: "Next.js",
       },
       {
+        name: "React",
+      },
+      {
         name: "Tailwind CSS",
       },
       {
         name: "Framer Motion",
       },
     ],
-    image: "/assets/work/project-6.png",
-    live: "",
-    github: "",
+    image: "/assets/work/project-1.png",
+    live: "https://portfolio-ten-lime-87.vercel.app/",
+    github: "https://github.com/woafi/Portfolio",
   },
   {
     num: "02",
-    title: "asdasd",
-    description: "My personal portfolio website showcasing my skills and projects.",
+    title: "PassFort",
+    description: "PassFort is a simple and secure password manager built using React, Tailwind Css, Express, and MongoDB. It allows users to store multiple website credentials securely with features like password visibility toggle, edit, delete, and copy functionality. The application is deployed using MongoDB Atlas (database), Render (backend), and Vercel (frontend).",
     stack: [
       {
-        name: "Next.js",
+        name: "React",
       },
       {
         name: "Tailwind CSS",
       },
       {
-        name: "Framer Motion",
+        name: "MongoDB",
+      },
+      {
+        name: "Express.js",
       },
     ],
+    image: "/assets/work/project-2.png",
+    live: "https://pass-fort-zeta.vercel.app/",
+    github: "https://github.com/woafi/PassFort",
+  },
+  {
+    num: "03",
+    title: "Task Manager",
+    description: "A React-based task management application that helps users organize and track their tasks efficiently. The application provides a clean and intuitive interface for managing daily tasks with persistent storage functionality",
+    stack: [
+      {
+        name: "React",
+      },
+      {
+        name: "Tailwind CSS",
+      },
+      {
+        name: "JavaScript",
+      },
+
+    ],
+    image: "/assets/work/project-3.png",
+    live: "https://task-manger-ashy.vercel.app/",
+    github: "https://github.com/woafi/Task-Manager",
+  },
+  {
+    num: "04",
+    title: "Web Music Player",
+    description: "A web-based music player inspired by Spotify. It allows users to browse different libraries, select songs from a playlist, and enjoy functionalities such as play, pause, volume control, seek bar, mute, and responsive design with a mobile-friendly hamburger menu. Built using HTML, CSS, and JavaScript.",
+    stack: [
+
+      {
+        name: "JavaScript",
+      },
+      {
+        name: "Css",
+      },
+      {
+        name: "HTML",
+      },
+
+    ],
+    image: "/assets/work/project-4.png",
+    live: "http://spotifywebplayer.42web.io/",
+    github: "https://github.com/woafi/Web-Music-Player",
+  },
+
+  {
+    num: "05",
+    title: "CurrencyXchange",
+    description: "CurrencyXchange is a simple and intuitive web-based currency converter that allows users to convert between different currencies in real-time. Built using HTML, CSS, and JavaScript, this project leverages a public API to fetch the latest exchange rates.",
+    stack: [
+
+      {
+        name: "JavaScript",
+      },
+      {
+        name: "Css",
+      },
+      {
+        name: "HTML",
+      },
+
+    ],
     image: "/assets/work/project-5.png",
-    live: "",
-    github: "",
+    live: "https://woafi.github.io/CurrencyXchange/index.html",
+    github: "https://github.com/woafi/CurrencyXchange",
+  },
+  {
+    num: "06",
+    title: "Netflix-Clone",
+    description: "A responsive Netflix homepage clone built with HTML and CSS, designed to replicate the look and feel of the original interface. This project is perfect for practicing front-end development and web design skills.",
+    stack: [
+      {
+        name: "Css",
+      },
+      {
+        name: "HTML",
+      },
+
+    ],
+    image: "/assets/work/project-6.png",
+    live: "https://woafi.github.io/Netflix-Clone/index.html",
+    github: "https://github.com/woafi/Netflix-Clone",
   },
 ];
 
@@ -122,21 +208,21 @@ function Project() {
               slidesPerView={1}
               className="lg:h-[520px] mb-12"
               onSlideChange={handleSlideChange}>
-              {projects.map((project, index)=>(
+              {projects.map((project, index) => (
                 <SwiperSlide key={index} className="w-full">
-                 <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                  <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
                     {/* overlay */}
                     <div></div>
                     {/* image */}
                     <div className="relative w-full h-full">
-                    <Image src={project.image} fill className="object-cover object-left" alt="" />
+                      <Image src={project.image} fill className="object-cover object-left" alt="" />
                     </div>
                   </div>
                 </SwiperSlide>
               ))}
               {/* Slider Button */}
               <WorkSliderBtns containerStyle="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] lg:bottom-0 z-20 w-full justify-between lg:w-max lg:justify-none"
-              btnStyles="bg-[#00ff99] hover:bg-[#2cbd83] text-[#1c1c22] text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"/>
+                btnStyles="bg-[#00ff99] hover:bg-[#2cbd83] text-[#1c1c22] text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all" />
             </Swiper>
           </div>
         </div>

@@ -53,15 +53,15 @@ const education = {
   description: "",
   items: [
     {
-      institution: "Jhenidah Goverment Boys School",
-      degree: "SSC",
-      duration: "2016 - 2018",
-      grade: "GPA-5.00",
+      institution: " Bangladesh Institute of Science and Technology",
+      degree: "BSc",
+      duration: "2022 - present",
+      grade: "CGPA-3.1",
     },
     {
-      institution: "Jhenidah Goverment Boys School",
-      degree: "SSC",
-      duration: "2016 - 2018",
+      institution: "Government Keshab Chandra College, Jhenaidah",
+      degree: "HSC",
+      duration: "2018-2020",
       grade: "GPA-5.00",
     },
     {
@@ -102,7 +102,7 @@ const skills = {
       icon: <SiTailwindcss />,
     },
     {
-      name: "React",
+      name: "React.js",
       icon: <FaReact />,
     },
     {
@@ -157,10 +157,10 @@ function Resume() {
           <TabsContent value="education" className="w-full">
             <div className="px-4 pt-4 flex flex-col gap-[30px] text-center lg:text-left">
               <h2 className="text-4xl font-bold">{education.title}</h2>
-              <ScrollArea className="h-[400px]">
+              <ScrollArea className="max-h-[500px]">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                   {education.items.map((item, index) => (
-                    <div key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+                    <div key={index} className="bg-[#232329] min-h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
                       <h3 className="font-bold accent">{item.degree}</h3>
                       <span className="text-white">{item.duration}</span>
                       <p className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.institution}</p>

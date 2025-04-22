@@ -69,7 +69,7 @@ function Contact() {
                         <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl " action="">
                             <h3 className="text-4xl accent">Let's work together</h3>
                             <p className="text-white/60">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis explicabo laboriosam reprehenderit sit assumenda aut id.
+                                Let's discuss how I can help bring your ideas to life. Drop me a message below!
                             </p>
                             {/* input */}
                             <div className="grid grid-cols-1 gap-6">
@@ -86,6 +86,9 @@ function Contact() {
                                         <SelectLabel>Select a service</SelectLabel>
                                         <SelectItem value="Web Development">
                                             Web Development
+                                        </SelectItem>
+                                        <SelectItem value="UI/UX Design">
+                                            UI/UX Design
                                         </SelectItem>
                                     </SelectGroup>
                                 </SelectContent>
