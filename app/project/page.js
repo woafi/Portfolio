@@ -51,7 +51,7 @@ const projects = [
         name: "Express.js",
       },
       {
-        name: "RESTful API,",
+        name: "RESTful API",
       },
     ],
     image: "/assets/work/project-2.png",
