@@ -51,9 +51,6 @@ const projects = [
         name: "Express.js",
       },
       {
-        name: "Node.js",
-      },
-      {
         name: "RESTful API,",
       },
     ],
