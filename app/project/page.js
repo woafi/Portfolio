@@ -50,6 +50,12 @@ const projects = [
       {
         name: "Express.js",
       },
+      {
+        name: "Node.js",
+      },
+      {
+        name: "RESTful API,",
+      },
     ],
     image: "/assets/work/project-2.png",
     live: "https://pass-fort-zeta.vercel.app/",
