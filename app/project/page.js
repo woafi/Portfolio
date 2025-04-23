@@ -36,7 +36,7 @@ const projects = [
   {
     num: "02",
     title: "PassFort",
-    description: "PassFort is a simple and secure password manager built using React, Tailwind Css, Express, Node.js, RESTful API, and MongoDB. It allows users to store multiple website credentials securely with features like password visibility toggle, edit, delete, and copy functionality. The application is deployed using MongoDB Atlas (database), Render (backend), and Vercel (frontend).",
+    description: "PassFort is a simple and secure password manager built using React, Tailwind Css, Express, Node.js, RESTful API, and MongoDB. Allows users to store multiple website credentials securely with features like password visibility toggle, edit, delete, and copy functionality. Deployed using MongoDB Atlas (database), Render (backend), and Vercel (frontend).",
     stack: [
       {
         name: "React",
@@ -49,9 +49,6 @@ const projects = [
       },
       {
         name: "Express.js",
-      },
-      {
-        name: "RESTful API",
       },
     ],
     image: "/assets/work/project-2.png",
@@ -174,7 +171,7 @@ function Project() {
               <p className="text-white/60">{project.description}</p>
               <ul className="flex gap-4">
                 {project.stack.map((item, index) => (
-                  <li key={index} className="text-xl accent">{item.name}
+                  <li key={index} className="text-base lg:text-xl accent">{item.name}
                     {index !== project.stack.length - 1 && ","}
                   </li>
                 ))}
