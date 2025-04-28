@@ -20,15 +20,15 @@ function Photo() {
             opacity: 1,
             transition: { duration: 0.4, delay: 2.4, ease: "easeInOut" }
           }}
-          className="rounded-full w-[90%] h-[90%] overflow-hidden mix-blend-lighten absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0"
+          className="rounded-full w-[90%] h-[90%] overflow-hidden mix-blend-difference absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0"
         >
           <Image
-            src=""
+            src="/photo.png"
             priority
             quality={100}
             fill
             alt="Profile photo"
-            className="object-cover w-full h-full" // Changed to cover for better scaling
+            className="object-contain w-full  h-full" // Changed to cover for better scaling
             sizes="(max-width: 768px) 200px, 498px"
           />
         </motion.div>
