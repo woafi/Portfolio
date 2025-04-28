@@ -154,10 +154,10 @@ function Resume() {
           </TabsContent>
 
           {/* Education Tab */}
-          <TabsContent value="education" className="w-full">
+          <TabsContent value="education" className="w-full h-full">
             <div className="px-4 pt-4 flex flex-col gap-[30px] text-center lg:text-left">
               <h2 className="text-4xl font-bold">{education.title}</h2>
-              <ScrollArea className="max-h-[500px]">
+              <ScrollArea className="">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                   {education.items.map((item, index) => (
                     <div key={index} className="bg-[#232329] min-h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
@@ -185,8 +185,9 @@ function Resume() {
                   {skills.items.map((skill, index) => (
                     <Tooltip key={index}>
                       <TooltipTrigger asChild>
-                        <div className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group hover:text-[#00ff99] transition-all duration-300 cursor-pointer">
+                        <div className="w-full h-[150px] bg-[#232329] rounded-xl flex flex-col justify-center items-center group hover:text-[#00ff99] transition-all duration-300 cursor-pointer">
                           <span className="text-6xl">{skill.icon}</span>
+                          <p className="lg:hidden ">{skill.name}</p>
                         </div>
                       </TooltipTrigger>
                       <TooltipContent>

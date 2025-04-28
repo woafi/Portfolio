@@ -48,6 +48,9 @@ const projects = [
         name: "MongoDB",
       },
       {
+        name: "RESTful APIs",
+      },
+      {
         name: "Express.js",
       },
     ],
@@ -120,7 +123,7 @@ const projects = [
   },
   {
     num: "06",
-    title: "Netflix-Clone",
+    title: "Netflix Clone",
     description: "A responsive Netflix homepage clone built with HTML and CSS, designed to replicate the look and feel of the original interface. This project is perfect for practicing front-end development and web design skills.",
     stack: [
       {
@@ -159,17 +162,17 @@ function Project() {
           <div className="w-full lg:w-[50%] lg:h-[460px] flex flex-col xl:justify-between order-2 lg:order-none">
             <div className="flex flex-col gap-[30px] h-1/2">
               {/* outline number */}
-              <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
+              <div className="text-6xl md:text-8xl leading-none font-extrabold text-transparent text-outline">
                 {project.num}
               </div>
               <div className="group"> {/* Add group class here */}
-                <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-[#00ff99] transition-all duration-500 capitalize">
+                <h2 className="text-4xl md:text-[42px] font-bold leading-none text-white group-hover:text-[#00ff99] transition-all duration-500 capitalize">
                   {project.title}
                 </h2>
               </div>
               {/* project description */}
               <p className="text-white/60">{project.description}</p>
-              <ul className="flex gap-4">
+              <ul className="flex gap-4 flex-wrap">
                 {project.stack.map((item, index) => (
                   <li key={index} className="text-base lg:text-xl accent">{item.name}
                     {index !== project.stack.length - 1 && ","}

@@ -45,11 +45,11 @@ function Services() {
                 </Link>
               </div>
 
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-[#00ff99] transition-all duration-500">
+              <h2 className="text-[42px]  h-22 font-bold leading-none text-white group-hover:text-[#00ff99] transition-all duration-500">
                 {service.title}
               </h2>
 
-              <p className="text-white/60">
+              <p className="text-white/60  h-10">
                 {service.desc}
               </p>
 
