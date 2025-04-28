@@ -20,10 +20,10 @@ function Photo() {
             opacity: 1,
             transition: { duration: 0.4, delay: 2.4, ease: "easeInOut" }
           }}
-          className="rounded-full w-[90%] h-[90%] overflow-hidden mix-blend-difference absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0"
+          className="rounded-full w-[90%] h-[90%] overflow-hidden mix-blend-plus-lighter absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0"
         >
           <Image
-            src="/photo.png"
+            src="/photo.jpg"
             priority
             quality={100}
             fill
