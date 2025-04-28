@@ -11,12 +11,11 @@ export default function Home() {
       <main className="container mx-auto px-5 md:px-0 ">
         <div className="flex flex-col lg:flex-row items-center justify-between lg:pt-8 lg:pb-24">
           <div className="text-center lg:text-left order-2 lg:order-none">
-            <span className="text-xl">Software Developer</span>
             <h1 className="text-[48px] lg:text-[80px] leading-[1.1] font-semibold mb-6">
               Hello I'm <br /><span className="accent">Mohammad Woafi</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I'm a passionate Software Engineering student on an exciting journey to become a full-stack developer. Currently diving deep into Data Structures and Algorithms, I'm committed to expanding my technical skills and building innovative solutions.
+              A passionate Computer Science and Engineering student on an exciting journey to become a Software Engineer. Currently diving deep into Data Structures and Algorithms, I'm committed to expanding my technical skills and actively learning.
             </p>
             {/* btn and socials */}
             <div className="flex flex-col lg:flex-row items-center gap-8">

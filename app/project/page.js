@@ -14,7 +14,7 @@ const projects = [
   {
     num: "01",
     title: "Portfolio",
-    description: "My personal portfolio website showcasing my skills and projects.",
+    description: "This is a modern portfolio website built with Next.js, React, Tailwind CSS, and Framer Motion, featuring EmailJS integration for contact form functionality. The project showcases my skills, projects, education, services, and allows visitors to contact me directly through the website.",
     stack: [
       {
         name: "Next.js",
@@ -213,19 +213,18 @@ function Project() {
               onSlideChange={handleSlideChange}>
               {projects.map((project, index) => (
                 <SwiperSlide key={index} className="w-full">
-                  <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
-                    {/* overlay */}
-                    <div></div>
+                  <div className="h-[460px] rounded-l relative group flex justify-center items-center  bg-pink-50/20">
+                    
                     {/* image */}
-                    <div className="relative w-full h-full">
-                      <Image src={project.image} fill className="object-cover object-left" alt="" />
+                    <div className="relative w-full h-full rounded-lg overflow-hidden border  border-white/40">
+                      <Image src={project.image} fill className="object-cover md:object-contain object-center " alt="" />
                     </div>
                   </div>
                 </SwiperSlide>
               ))}
               {/* Slider Button */}
               <WorkSliderBtns containerStyle="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] lg:bottom-0 z-20 w-full justify-between lg:w-max lg:justify-none"
-                btnStyles="bg-[#00ff99] hover:bg-[#2cbd83] text-[#1c1c22] text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all" />
+                btnStyles=" bg-[#00ff99] hover:bg-[#2cbd83] text-[#1c1c22] text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all" />
             </Swiper>
           </div>
         </div>

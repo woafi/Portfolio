@@ -9,7 +9,7 @@ import { motion } from "framer-motion"
 
 const about = {
   title: "About Me",
-  description: "I'm Mohammad Woafi, a passionate Software Engineering student with a strong foundation in Data Structures and Algorithms and Full-Stack Web Development. My expertise lies in designing and implementing efficient data structures and algorithms and working with technologies like React, Next.js and JavaScript. Currently, I'm diving deep into Next.js enhance my backend expertise while continuously refining my front-end skills. My goal is to build impactful software solutions and grow as a professional in the software engineering domain.",
+  description: "I'm Mohammad Woafi, a passionate Computer Science and Engineering student with a strong foundation in Data Structures and Algorithms and Full-Stack Web Development. My expertise lies in designing and implementing efficient data structures and algorithms and working with technologies like React, Next.js and JavaScript. Exploring Next.js enhance my backend expertise while continuously refining my front-end skills. My goal is to build impactful software solutions and grow as a professional in the software engineering domain.",
   info: [
     {
       fieldName: "Name",
