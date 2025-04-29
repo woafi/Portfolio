@@ -1,4 +1,5 @@
 "use client"
+import { useState } from "react"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { usePathname } from "next/navigation"
 import Link from "next/link"
@@ -14,15 +15,19 @@ const links = [
 
 function MobileNav() {
     const pathname = usePathname()
+    const [open, setOpen] = useState(false)
+
     return (
-        <Sheet>
+        <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger className="flex items-center justify-center">
                 <CiMenuFries className="text-[32px] accent" />
             </SheetTrigger>
-            <SheetContent className="flex flex-col ">
+            <SheetContent className="flex flex-col">
                 <div className="mt-32 mb-40 text-center text-2xl">
-                    <Link href="/">
-                        <div className="text-3xl"><span className='accent'>W</span><span>oafi</span><span>.</span></div>
+                    <Link href="/" onClick={() => setOpen(false)}>
+                        <div className="text-3xl">
+                            <span className="accent">W</span><span>oafi</span><span>.</span>
+                        </div>
                     </Link>
                 </div>
                 <nav className="flex flex-col justify-center items-center gap-8">
@@ -30,8 +35,9 @@ function MobileNav() {
                         <Link
                             href={link.path}
                             key={index}
-                            className={`${link.path === pathname && "accent border-b-2 border-[#00ff99]"} 
-        capitalize font-medium accentHover transition-all`}
+                            onClick={() => setOpen(false)}
+                            className={`${link.path === pathname ? "accent border-b-2 border-[#00ff99]" : ""} 
+                                capitalize font-medium accentHover transition-all`}
                         >
                             {link.name}
                         </Link>
