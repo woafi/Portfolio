@@ -15,7 +15,7 @@ function WorkSliderBtns({ containerStyle, btnStyles, iconStyles }) {
       } else {
         swiper.slideNext();
       }
-    }, 5000);
+    }, 10000);
   };
   
   const stopInterval = () => {
