@@ -216,7 +216,7 @@ function Project() {
                   <div className="h-[460px] rounded-l relative group flex justify-center items-center  bg-pink-50/20">
                     
                     {/* image */}
-                    <div className="relative w-full h-full rounded-lg overflow-hidden border  border-white/40">
+                    <div className="relative w-full h-full rounded-lg overflow-hidden border  border-white/40 ">
                       <Image src={project.image} fill className="object-cover md:object-contain object-center " alt="" />
                     </div>
                   </div>
@@ -224,7 +224,7 @@ function Project() {
               ))}
               {/* Slider Button */}
               <WorkSliderBtns containerStyle="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] lg:bottom-0 z-20 w-full justify-between lg:w-max lg:justify-none"
-                btnStyles=" bg-[#00ff99] hover:bg-[#2cbd83] text-[#1c1c22] text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all" />
+                btnStyles=" bg-[#00ff99] hover:bg-[#2cbd83] lg:rounded-lg text-[#1c1c22] text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all" />
             </Swiper>
           </div>
         </div>
