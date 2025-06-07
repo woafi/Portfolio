@@ -36,7 +36,7 @@ const projects = [
   {
     num: "02",
     title: "PassFort",
-    description: "PassFort is a simple and secure password manager built using React, Tailwind Css, Express, Node.js, RESTful API, and MongoDB. Allows users to store multiple website credentials securely with features like password visibility toggle, edit, delete, and copy functionality. Deployed using MongoDB Atlas (database), Render (backend), and Vercel (frontend).",
+    description: "PassFort is a simple and secure password manager built using React, Tailwind Css, Express, Node.js, RESTful API, and MongoDB. Allows users to store multiple website credentials securely with features like password visibility toggle, edit, delete, and copy functionality. Deployed using MongoDB Atlas (database), Vercel (frontend, backend).",
     stack: [
       {
         name: "React",

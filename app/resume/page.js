@@ -11,7 +11,7 @@ import { motion } from "framer-motion"
 
 const about = {
     title: "About Me",
-    description: "I'm Mohammad Woafi, a passionate Computer Science and Engineering student with a strong foundation in Data Structures and Algorithms and Full-Stack Web Development. My expertise lies in designing and implementing efficient data structures and algorithms and working with technologies like React, Next.js and JavaScript. Exploring Next.js, enhance my backend expertise while continuously refining my front-end skills. My goal is to build impactful software solutions and grow as a professional in the software engineering domain.",
+    description: "I specialize in Full-Stack Web Development, focusing on modern technologies like Node.js, React, and Next.js. My current work revolves around enhancing backend capabilities while crafting responsive and intuitive front-end experiences. I’ve also explored projects involving API integration, local storage management, and deploying production-ready apps using platforms like Vercel. I’m actively diving into C# and ASP.NET Core to expand my backend stack, while also strengthening my problem-solving skills through LeetCode topic-wise practice. I’m on a mission to become a well-rounded Full-Stack Developer who writes clean, secure, and efficient code.",
     info: [
         {
             fieldName: "Name",
@@ -39,7 +39,7 @@ const about = {
 const experience = {
     icon: "/assets/resume/badge.svg",
     title: "Experience",
-    description: "I have experience in Full-Stack Web Development, specializing in creating dynamic and responsive web applications. My expertise includes working with technologies such as React, Next.js, and JavaScript. I am passionate about building user-friendly interfaces and ensuring seamless user experiences.",
+    description: "I have experience in Full-Stack Web Development, specializing in creating dynamic and responsive web applications. My expertise includes working with technologies such as Node.js, Express.js, React, and Next.js. I am passionate about building user-friendly interfaces and ensuring seamless user experiences.",
     items: [
         {
             company: "Freelance",
