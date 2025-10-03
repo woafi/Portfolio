@@ -13,6 +13,31 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
+    title: "MyChat",
+    description: "A full-stack real-time messaging application built with the MERN stack, featuring secure authentication, file sharing, comprehensive notification system and responsive design.",
+    stack: [
+      {
+        name: "React",
+      },
+      {
+        name: "Tailwind CSS",
+      },
+      {
+        name: "MongoDB",
+      },
+      {
+        name: "Node.js",
+      },
+      {
+        name: "Express.js",
+      },
+    ],
+    image: "/assets/work/projectMyCHat.png",
+    live: "https://my-chat-6blp.onrender.com/",
+    github: "https://github.com/woafi/My-Chat",
+  },
+  {
+    num: "02",
     title: "Portfolio",
     description: "This is a modern portfolio website built with Next.js, React, Tailwind CSS, and Framer Motion, featuring EmailJS integration for contact form functionality. The project showcases my skills, projects, education, services, and allows visitors to contact me directly through the website.",
     stack: [
@@ -34,7 +59,7 @@ const projects = [
     github: "https://github.com/woafi/Portfolio",
   },
   {
-    num: "02",
+    num: "03",
     title: "PassFort",
     description: "PassFort is a simple and secure password manager built using React, Tailwind Css, Express, Node.js, RESTful API, and MongoDB. Allows users to store multiple website credentials securely with features like password visibility toggle, edit, delete, and copy functionality. Deployed using MongoDB Atlas (database), Vercel (frontend, backend).",
     stack: [
@@ -59,7 +84,7 @@ const projects = [
     github: "https://github.com/woafi/PassFort",
   },
   {
-    num: "03",
+    num: "04",
     title: "Task Manager",
     description: "A React-based task management application that helps users organize and track their tasks efficiently. The application provides a clean and intuitive interface for managing daily tasks with persistent storage functionality",
     stack: [
@@ -79,7 +104,7 @@ const projects = [
     github: "https://github.com/woafi/Task-Manager",
   },
   {
-    num: "04",
+    num: "05",
     title: "Web Music Player",
     description: "A web-based music player inspired by Spotify. It allows users to browse different libraries, select songs from a playlist, and enjoy functionalities such as play, pause, volume control, seek bar, mute, and responsive design with a mobile-friendly hamburger menu. Built using HTML, CSS, and JavaScript.",
     stack: [
@@ -101,7 +126,7 @@ const projects = [
   },
 
   {
-    num: "05",
+    num: "06",
     title: "CurrencyXchange",
     description: "CurrencyXchange is a simple and intuitive web-based currency converter that allows users to convert between different currencies in real-time. Built using HTML, CSS, and JavaScript, this project leverages a public API to fetch the latest exchange rates.",
     stack: [
@@ -122,7 +147,7 @@ const projects = [
     github: "https://github.com/woafi/CurrencyXchange",
   },
   {
-    num: "06",
+    num: "07",
     title: "Netflix Clone",
     description: "A responsive Netflix homepage clone built with HTML and CSS, designed to replicate the look and feel of the original interface. This project is perfect for practicing front-end development and web design skills.",
     stack: [
