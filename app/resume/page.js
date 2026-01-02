@@ -1,7 +1,7 @@
 "use client"
 import { useRef } from "react"
 import { FaJs, FaJava, FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaGitAlt } from "react-icons/fa";
-import { SiNextdotjs, SiExpress, SiTailwindcss, SiMongodb, SiMysql, SiVercel, SiPostman } from "react-icons/si";
+import { SiNextdotjs, SiExpress, SiTailwindcss, SiMongodb, SiMysql, SiVercel, SiPostman, SiTypescript, SiPostgresql, SiRender } from "react-icons/si";
 import { MdOutlineDataObject } from "react-icons/md";
 import { BsDatabaseFillGear } from "react-icons/bs";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -11,7 +11,7 @@ import { motion } from "framer-motion"
 
 const about = {
     title: "About Me",
-    description: "I specialize in Full-Stack Web Development, focusing on modern technologies like Node.js, React, and Next.js. My current work revolves around enhancing backend capabilities while crafting responsive and intuitive front-end experiences. I’ve also explored projects involving API integration, local storage management, and deploying production-ready apps using platforms like Vercel. I’m actively diving into C# and ASP.NET Core to expand my backend stack, while also strengthening my problem-solving skills through LeetCode topic-wise practice. I’m on a mission to become a well-rounded Full-Stack Developer who writes clean, secure, and efficient code.",
+    description: "I am a Computer Science and Engineering (CSE) student and a Full-Stack Web Developer with a strong focus on building scalable, secure, and production-ready web applications. Currently, I am expanding my backend expertise by learning Python and Django, while strengthening my problem-solving and data structures skills through topic-wise LeetCode practice. My goal is to grow into a well-rounded Full-Stack Developer who consistently writes clean, maintainable, secure, and high-performance code.",
     info: [
         {
             fieldName: "Name",
@@ -39,7 +39,7 @@ const about = {
 const experience = {
     icon: "/assets/resume/badge.svg",
     title: "Experience",
-    description: "I have experience in Full-Stack Web Development, specializing in creating dynamic and responsive web applications. My expertise includes working with technologies such as Node.js, Express.js, React, and Next.js. I am passionate about building user-friendly interfaces and ensuring seamless user experiences.",
+    description: "I am a Full-Stack Web Developer with hands-on experience building dynamic, responsive, and production-ready web applications. I specialize in backend development using Node.js and Express.js, and frontend development with React and Next.js. I work extensively with PostgreSQL and MongoDB for database design and data management, using Prisma ORM to build efficient, type-safe, and scalable data layers. I am passionate about delivering user-centric interfaces, optimizing performance, and ensuring seamless end-to-end user experiences.",
     items: [
         {
             company: "Freelance",
@@ -83,6 +83,7 @@ const skills = {
             category: "Languages",
             technologies: [
                 { name: "JavaScript", icon: <FaJs /> },
+                { name: "TypeScript", icon: <SiTypescript /> },
                 { name: "Java", icon: <FaJava /> },
                 { name: "HTML", icon: <FaHtml5 /> },
                 { name: "CSS", icon: <FaCss3Alt /> }
@@ -102,7 +103,8 @@ const skills = {
             category: "Databases",
             technologies: [
                 { name: "MongoDB", icon: <SiMongodb /> },
-                { name: "MySQL", icon: <SiMysql /> }
+                { name: "MySQL", icon: <SiMysql /> },
+                { name: "PostgreSQL", icon: <SiPostgresql /> }
             ],
         },
         {
@@ -110,6 +112,7 @@ const skills = {
             technologies: [
                 { name: "Git & GitHub", icon: <FaGitAlt /> },
                 { name: "Vercel", icon: <SiVercel /> },
+                { name: "Render", icon: <SiRender /> },
                 { name: "Postman", icon: <SiPostman /> },
             ],
         },
@@ -138,7 +141,7 @@ function Resume() {
                 opacity: 1,
                 transition: { delay: 2.4, duration: 0.5, ease: 'easeIn' },
             }}
-            className="min-h-[80vh] flex flex-col items-center py-12 lg:py-24"> 
+            className="min-h-[80vh] flex flex-col items-center py-12 lg:py-24">
             <div className="container mx-auto px-5 lg:px-0">
                 <Tabs defaultValue="about" className="flex flex-col lg:flex-row gap-[60px]">
                     <TabsList className="flex flex-col w-full max-w-[380px] mx-auto lg:mx-0 gap-2 lg:gap-4">
@@ -149,101 +152,101 @@ function Resume() {
                     </TabsList>
 
                     <div ref={contentRef} className="w-full">
-                    {/* Experience Tab */}
-                    <TabsContent value="experience" className="w-full">
-                        <div className="px-4 pt-4 flex flex-col gap-[30px] text-center lg:text-left">
-                            <h2 className="text-4xl font-bold">{experience.title}</h2>
-                            <p className="text-white/60 mx-auto lg:mx-0">{experience.description}</p>
-                            <ScrollArea className="h-[400px]">
-                                <div className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
-                                    {experience.items.map((item, index) => (
-                                        <div key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
-                                            <h3 className="font-bold text-[#00ff99]">{item.company}</h3> 
-                                            <p className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</p>
-                                            <div className="flex items-center gap-3">
-                                                <span className="w-[6px] h-[6px] rounded-full bg-[#00ff99]"></span>
-                                                <p className="text-white/60">{item.duration}</p>
+                        {/* Experience Tab */}
+                        <TabsContent value="experience" className="w-full">
+                            <div className="px-4 pt-4 flex flex-col gap-[30px] text-center lg:text-left">
+                                <h2 className="text-4xl font-bold">{experience.title}</h2>
+                                <p className="text-white/60 mx-auto lg:mx-0">{experience.description}</p>
+                                <ScrollArea className="h-[400px]">
+                                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                                        {experience.items.map((item, index) => (
+                                            <div key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+                                                <h3 className="font-bold text-[#00ff99]">{item.company}</h3>
+                                                <p className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</p>
+                                                <div className="flex items-center gap-3">
+                                                    <span className="w-[6px] h-[6px] rounded-full bg-[#00ff99]"></span>
+                                                    <p className="text-white/60">{item.duration}</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </ScrollArea>
-                        </div>
-                    </TabsContent>
-
-                    {/* Education Tab */}
-                    <TabsContent value="education" className="w-full h-full">
-                        <div className="px-4 pt-4 flex flex-col gap-[30px] text-center lg:text-left">
-                            <h2 className="text-4xl font-bold">{education.title}</h2>
-                            <ScrollArea className="lg:h-[490px]"> 
-                                <div className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
-                                    {education.items.map((item, index) => (
-                                        <div key={index} className="bg-[#232329] min-h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
-                                            <h3 className="font-bold text-[#00ff99]">{item.degree}</h3> 
-                                            <span className="text-white">{item.duration}</span>
-                                            <p className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.institution}</p>
-                                            <div className="flex items-center gap-3">
-                                                <span className="w-[6px] h-[6px] rounded-full bg-[#00ff99]"></span>
-                                                <p className="text-white/60">Grade: {item.grade}</p>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </ScrollArea>
-                        </div>
-                    </TabsContent>
-
-                    {/* Skills Tab */}
-                    <TabsContent value="skills" className="w-full h-full">
-                        <div className="px-4 pt-4 flex flex-col gap-[30px] text-center lg:text-left">
-                            <h2 className="text-4xl font-bold">{skills.title}</h2>
-                            <ScrollArea className="lg:h-[490px]"> 
-                                <div className="flex flex-col gap-8">
-                                    {skills.items.map((item, index) => (
-                                        <div key={index} className="bg-[#232329] p-6 rounded-xl shadow-lg">
-                                            <h3 className="text-xl font-semibold mb-4 text-[#00ff99]">{item.category}</h3>
-                                            <div className="flex flex-wrap gap-3">
-                                                {item.technologies.map((tech, idx) => (
-                                                    <TooltipProvider key={idx}> 
-                                                        <Tooltip>
-                                                            <TooltipTrigger asChild>
-                                                                <span className="flex items-center gap-2 bg-[#2d2d34] px-4 py-2 rounded-full text-sm hover:bg-[#3a3a42] hover:text-[#00ff99] transition-all duration-300">
-                                                                    <span className="text-2xl lg:text-5xl">{tech.icon}</span>
-                                                                    <span className=" lg:hidden">{tech.name}</span>
-                                                                </span>
-                                                            </TooltipTrigger>
-                                                            <TooltipContent>
-                                                                <p>{tech.name}</p>
-                                                            </TooltipContent>
-                                                        </Tooltip>
-                                                    </TooltipProvider>
-                                                ))}
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </ScrollArea>
-                        </div>
-                    </TabsContent>
-
-                    {/* About Tab */}
-                    <TabsContent value="about" className="w-full text-center lg:text-left">
-                        <div className="px-4 pt-4 flex flex-col gap-[30px]">
-                            <h2 className="text-4xl font-bold">{about.title}</h2>
-                            <p className="text-white/60 mx-auto lg:mx-0">{about.description}</p>
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-6 mx-auto lg:mx-0">
-                                {about.info.map((item, index) => (
-                                    <div key={index} className="flex items-center justify-center lg:justify-start gap-4">
-                                        <span className="text-white/60">{item.fieldName}: </span>
-                                        <span className="text-xl">{item.fieldValue}</span>
+                                        ))}
                                     </div>
-                                ))}
+                                </ScrollArea>
                             </div>
-                        </div>
-                    </TabsContent>
+                        </TabsContent>
+
+                        {/* Education Tab */}
+                        <TabsContent value="education" className="w-full h-full">
+                            <div className="px-4 pt-4 flex flex-col gap-[30px] text-center lg:text-left">
+                                <h2 className="text-4xl font-bold">{education.title}</h2>
+                                <ScrollArea className="lg:h-[490px]">
+                                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                                        {education.items.map((item, index) => (
+                                            <div key={index} className="bg-[#232329] min-h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+                                                <h3 className="font-bold text-[#00ff99]">{item.degree}</h3>
+                                                <span className="text-white">{item.duration}</span>
+                                                <p className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.institution}</p>
+                                                <div className="flex items-center gap-3">
+                                                    <span className="w-[6px] h-[6px] rounded-full bg-[#00ff99]"></span>
+                                                    <p className="text-white/60">Grade: {item.grade}</p>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </ScrollArea>
+                            </div>
+                        </TabsContent>
+
+                        {/* Skills Tab */}
+                        <TabsContent value="skills" className="w-full h-full">
+                            <div className="px-4 pt-4 flex flex-col gap-[30px] text-center lg:text-left">
+                                <h2 className="text-4xl font-bold">{skills.title}</h2>
+                                <ScrollArea className="lg:h-[490px]">
+                                    <div className="flex flex-col gap-8">
+                                        {skills.items.map((item, index) => (
+                                            <div key={index} className="bg-[#232329] p-6 rounded-xl shadow-lg">
+                                                <h3 className="text-xl font-semibold mb-4 text-[#00ff99]">{item.category}</h3>
+                                                <div className="flex flex-wrap gap-3">
+                                                    {item.technologies.map((tech, idx) => (
+                                                        <TooltipProvider key={idx}>
+                                                            <Tooltip>
+                                                                <TooltipTrigger asChild>
+                                                                    <span className="flex items-center gap-2 bg-[#2d2d34] px-4 py-2 rounded-full text-sm hover:bg-[#3a3a42] hover:text-[#00ff99] transition-all duration-300">
+                                                                        <span className="text-2xl lg:text-5xl">{tech.icon}</span>
+                                                                        <span className=" lg:hidden">{tech.name}</span>
+                                                                    </span>
+                                                                </TooltipTrigger>
+                                                                <TooltipContent>
+                                                                    <p>{tech.name}</p>
+                                                                </TooltipContent>
+                                                            </Tooltip>
+                                                        </TooltipProvider>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </ScrollArea>
+                            </div>
+                        </TabsContent>
+
+                        {/* About Tab */}
+                        <TabsContent value="about" className="w-full text-center lg:text-left">
+                            <div className="px-4 pt-4 flex flex-col gap-[30px]">
+                                <h2 className="text-4xl font-bold">{about.title}</h2>
+                                <p className="text-white/60 mx-auto lg:mx-0">{about.description}</p>
+                                <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-6 mx-auto lg:mx-0">
+                                    {about.info.map((item, index) => (
+                                        <div key={index} className="flex items-center justify-center lg:justify-start gap-4">
+                                            <span className="text-white/60">{item.fieldName}: </span>
+                                            <span className="text-xl">{item.fieldValue}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </TabsContent>
                     </div>
                 </Tabs>
-                
+
             </div>
         </motion.div>
     )
