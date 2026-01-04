@@ -12,7 +12,7 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 
 const projects = [
   {
-    num: "01",
+    num: "02",
     title: "MyChat",
     description: "A full-stack real-time messaging application built with the MERN stack, featuring secure authentication, file sharing, comprehensive notification system and responsive design.",
     stack: [
@@ -38,6 +38,53 @@ const projects = [
   },
   {
     num: "02",
+    title: "MyChat",
+    description: "A full-stack real-time messaging application built with the MERN stack, featuring secure authentication, file sharing, comprehensive notification system and responsive design.",
+    stack: [
+      {
+        name: "React",
+      },
+      {
+        name: "Tailwind CSS",
+      },
+      {
+        name: "MongoDB",
+      },
+      {
+        name: "Node.js",
+      },
+      {
+        name: "Express.js",
+      },
+    ],
+    image: "/assets/work/projectMyCHat.png",
+    live: "https://my-chat-6blp.onrender.com/",
+    github: "https://github.com/woafi/My-Chat",
+  },
+  {
+    num: "03",
+    title: "SecureNest",
+    description: "A full-stack password manager built with TypeScript, featuring military-grade AES-256-GCM encryption, Firebase authentication, and a beautiful dark-mode UI with smooth animations.",
+    stack: [
+      {
+        name: "React",
+      },
+      {
+        name: "Tailwind CSS",
+      },
+      {
+        name: "PostgreSQL",
+      },
+      {
+        name: "Express.js",
+      },
+    ],
+    image: "/assets/work/projectSecureNest.png",
+    live: "https://secure-nest-frontend-pi.vercel.app",
+    github: "https://github.com/woafi/SecureNest",
+  },
+  {
+    num: "04",
     title: "Portfolio",
     description: "This is a modern portfolio website built with Next.js, React, Tailwind CSS, and Framer Motion, featuring EmailJS integration for contact form functionality. The project showcases my skills, projects, education, services, and allows visitors to contact me directly through the website.",
     stack: [
@@ -59,34 +106,9 @@ const projects = [
     github: "https://github.com/woafi/Portfolio",
   },
   {
-    num: "03",
-    title: "PassFort",
-    description: "PassFort is a simple and secure password manager built using React, Tailwind Css, Express, Node.js, RESTful API, and MongoDB. Allows users to store multiple website credentials securely with features like password visibility toggle, edit, delete, and copy functionality. Deployed using MongoDB Atlas (database), Vercel (frontend, backend).",
-    stack: [
-      {
-        name: "React",
-      },
-      {
-        name: "Tailwind CSS",
-      },
-      {
-        name: "MongoDB",
-      },
-      {
-        name: "RESTful APIs",
-      },
-      {
-        name: "Express.js",
-      },
-    ],
-    image: "/assets/work/project-2.png",
-    live: "https://pass-fort-zeta.vercel.app/",
-    github: "https://github.com/woafi/PassFort",
-  },
-  {
-    num: "04",
-    title: "Task Manager",
-    description: "A React-based task management application that helps users organize and track their tasks efficiently. The application provides a clean and intuitive interface for managing daily tasks with persistent storage functionality",
+    num: "05",
+    title: "Todo List",
+    description: "A React-based task management application that helps users organize and track their tasks efficiently. The application provides a clean and intuitive interface for managing daily tasks with persistent storage functionality.",
     stack: [
       {
         name: "React",
@@ -99,12 +121,12 @@ const projects = [
       },
 
     ],
-    image: "/assets/work/project-3.png",
-    live: "https://task-manger-ashy.vercel.app/",
-    github: "https://github.com/woafi/Task-Manager",
+    image: "/assets/work/projectTodoList.png",
+    live: "https://task-manger-ashy.vercel.app",
+    github: "https://github.com/woafi/Todo-List",
   },
   {
-    num: "05",
+    num: "06",
     title: "Web Music Player",
     description: "A web-based music player inspired by Spotify. It allows users to browse different libraries, select songs from a playlist, and enjoy functionalities such as play, pause, volume control, seek bar, mute, and responsive design with a mobile-friendly hamburger menu. Built using HTML, CSS, and JavaScript.",
     stack: [
@@ -126,7 +148,7 @@ const projects = [
   },
 
   {
-    num: "06",
+    num: "07",
     title: "CurrencyXchange",
     description: "CurrencyXchange is a simple and intuitive web-based currency converter that allows users to convert between different currencies in real-time. Built using HTML, CSS, and JavaScript, this project leverages a public API to fetch the latest exchange rates.",
     stack: [
@@ -147,7 +169,7 @@ const projects = [
     github: "https://github.com/woafi/CurrencyXchange",
   },
   {
-    num: "07",
+    num: "08",
     title: "Netflix Clone",
     description: "A responsive Netflix homepage clone built with HTML and CSS, designed to replicate the look and feel of the original interface. This project is perfect for practicing front-end development and web design skills.",
     stack: [
