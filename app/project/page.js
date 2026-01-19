@@ -37,31 +37,6 @@ const projects = [
     github: "https://github.com/woafi/My-Chat",
   },
   {
-    num: "02",
-    title: "MyChat",
-    description: "A full-stack real-time messaging application built with the MERN stack, featuring secure authentication, file sharing, comprehensive notification system and responsive design.",
-    stack: [
-      {
-        name: "React",
-      },
-      {
-        name: "Tailwind CSS",
-      },
-      {
-        name: "MongoDB",
-      },
-      {
-        name: "Node.js",
-      },
-      {
-        name: "Express.js",
-      },
-    ],
-    image: "/assets/work/projectMyCHat.png",
-    live: "https://my-chat-6blp.onrender.com/",
-    github: "https://github.com/woafi/My-Chat",
-  },
-  {
     num: "03",
     title: "SecureNest",
     description: "A full-stack password manager built with TypeScript, featuring military-grade AES-256-GCM encryption, Firebase authentication, and a beautiful dark-mode UI with smooth animations.",
