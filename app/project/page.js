@@ -149,7 +149,6 @@ const projects = [
     live: "http://spotifywebplayer.42web.io/",
     github: "https://github.com/woafi/Web-Music-Player",
   },
-
   {
     num: "07",
     title: "CurrencyXchange",
