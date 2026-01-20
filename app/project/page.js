@@ -12,6 +12,31 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 
 const projects = [
   {
+    num: "01",
+    title: "Tech Gadget",
+    description: "A modern, production-ready full-stack e-commerce web application for technology gadgets. Built with TypeScript throughout the entire stack, featuring a responsive React frontend and a robust Node.js backend with RESTful API architecture.",
+    stack: [
+      {
+        name: "TypeScript",
+      },
+      {
+        name: "React",
+      },
+      {
+        name: "Tailwind CSS",
+      },
+      {
+        name: "PostgreSQL",
+      },
+      {
+        name: "Express.js",
+      },
+    ],
+    image: "/assets/work/projectTechGadgets.png",
+    live: "https://tech-gadget-five.vercel.app",
+    github: "https://github.com/woafi/Tech-Gadget",
+  },
+  {
     num: "02",
     title: "MyChat",
     description: "A full-stack real-time messaging application built with the MERN stack, featuring secure authentication, file sharing, comprehensive notification system and responsive design.",
@@ -41,6 +66,9 @@ const projects = [
     title: "SecureNest",
     description: "A full-stack password manager built with TypeScript, featuring military-grade AES-256-GCM encryption, Firebase authentication, and a beautiful dark-mode UI with smooth animations.",
     stack: [
+      {
+        name: "TypeScript",
+      },
       {
         name: "React",
       },
