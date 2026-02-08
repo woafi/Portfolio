@@ -1,7 +1,7 @@
 "use client"
 import { useRef } from "react"
 import { FaJs, FaJava, FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaGitAlt } from "react-icons/fa";
-import { SiNextdotjs, SiExpress, SiTailwindcss, SiMongodb, SiMysql, SiVercel, SiPostman, SiTypescript, SiPostgresql, SiRender } from "react-icons/si";
+import { SiNextdotjs, SiExpress, SiTailwindcss, SiMongodb, SiMysql, SiVercel, SiPostman, SiTypescript, SiPostgresql, SiRender, SiPython, SiDjango, SiPrisma, } from "react-icons/si";
 import { MdOutlineDataObject } from "react-icons/md";
 import { BsDatabaseFillGear } from "react-icons/bs";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -86,17 +86,19 @@ const skills = {
                 { name: "TypeScript", icon: <SiTypescript /> },
                 { name: "Java", icon: <FaJava /> },
                 { name: "HTML", icon: <FaHtml5 /> },
-                { name: "CSS", icon: <FaCss3Alt /> }
+                { name: "CSS", icon: <FaCss3Alt /> },
+                { name: "Python", icon: <SiPython /> },
             ],
         },
         {
             category: "Frameworks/Libraries",
             technologies: [
-                { name: "React", icon: <FaReact /> },
+                { name: "React/React Native", icon: <FaReact /> },
                 { name: "Next.js", icon: <SiNextdotjs /> },
                 { name: "Node.js", icon: <FaNodeJs /> },
                 { name: "Express", icon: <SiExpress /> },
-                { name: "Tailwind CSS", icon: <SiTailwindcss /> }
+                { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+                { name: "Django", icon: <SiDjango /> },
             ],
         },
         {
@@ -114,6 +116,7 @@ const skills = {
                 { name: "Vercel", icon: <SiVercel /> },
                 { name: "Render", icon: <SiRender /> },
                 { name: "Postman", icon: <SiPostman /> },
+                { name: "Prisma ORM", icon: <SiPrisma /> },
             ],
         },
         {

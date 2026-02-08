@@ -17,6 +17,12 @@ const services = [
     desc: "Designing intuitive and engaging user interfaces.",
     href: "/contact",
   },
+  {
+    num: "03",
+    title: "Apk Development",
+    desc: "Designing and developing clean, efficient apk with reactnative that work on all devices",
+    href: "/contact",
+  },
 ]
 
 function Services() {
