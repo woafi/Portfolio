@@ -1,0 +1,117 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  --color: #f4f4f5;
+  --color-muted: rgba(244, 244, 245, 0.72);
+  --bg: #0f0f14;
+  --bg-elevated: #16161d;
+  --bg-card: #1c1c26;
+  --accent: #00ff99;
+  --accent-hover: #33ffb3;
+  --accent-secondary: #22d3ee;
+  --accent-tertiary: #a78bfa;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --glass: rgba(22, 22, 29, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glow-accent: color-mix(in srgb, var(--accent) 45%, transparent);
+  --glow-cyan: color-mix(in srgb, var(--accent-secondary) 35%, transparent);
+  --radius-lg: 1rem;
+  --radius-full: 9999px;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --shadow-elevated: 0 24px 80px rgba(0, 0, 0, 0.45);
+  --shadow-glow: 0 0 0 1px rgba(255, 255, 255, 0.06),
+    0 0 60px color-mix(in srgb, var(--accent) 18%, transparent);
+}
+
+@theme inline {
+  --color-background: var(--bg);
+  --color-foreground: var(--color);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--color);
+  font-family: var(--font-jetbrains-mono), ui-monospace, monospace;
+  line-height: 1.65;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.accentHover:hover {
+  color: var(--accent-hover);
+}
+
+.hovertext {
+  color: var(--bg);
+}
+
+.text-gradient-accent {
+  background: linear-gradient(
+    120deg,
+    var(--accent-secondary) 0%,
+    var(--accent) 45%,
+    #b8ffd9 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glass-panel {
+  background: var(--glass);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-elevated);
+}
+
+.glow-ring {
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 35%, transparent),
+    0 0 48px color-mix(in srgb, var(--accent) 22%, transparent),
+    var(--shadow-elevated);
+}
+
+.section-divider {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.12) 40%,
+    color-mix(in srgb, var(--accent) 35%, transparent) 50%,
+    rgba(255, 255, 255, 0.12) 60%,
+    transparent
+  );
+}
+
+@layer utilities {
+  .text-outline {
+    -webkit-text-stroke: 1px white;
+  }
+
+  .group:hover .group-hover\:text-outline-accent {
+    -webkit-text-stroke: 1px var(--accent);
+  }
+
+  .motion-safe-transition {
+    transition-property: transform, opacity, box-shadow, border-color,
+      background-color, color;
+    transition-duration: 280ms;
+    transition-timing-function: var(--ease-out-expo);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-reduce-hide {
+    display: none !important;
+  }
+}
